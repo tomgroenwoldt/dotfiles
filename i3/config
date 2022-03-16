@@ -18,6 +18,15 @@ font pango:monospace 13
 # Keyboard layout
 exec setxkbmap -layout de
 
+# Wallpaper
+exec ~/.fehbg
+
+# Password Manager
+exec nordpass
+
+# Picom
+exec_always --no-startup-id picom --config ~/.config/picom/picom.conf -b
+
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8

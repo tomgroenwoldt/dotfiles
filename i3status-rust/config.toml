@@ -7,7 +7,6 @@ step_width = 3
 
 [[block]]
 block = "disk_space"
-#colour = "FFFFFF"
 path = "/"
 alias = "/"
 info_type = "available"
@@ -16,34 +15,20 @@ interval = 20
 warning = 20.0
 alert = 10.0
 [block.theme_overrides]
-idle_bg = "#B20000"
-   
-
-[[block]]
-block = "memory"
-display_type = "memory"
-format_mem = "{mem_used_percents}"
-
-[[block]]
-block = "cpu"
-interval = 1
-[block.theme_overrides]
-idle_bg = "#E58300"
-
-[[block]]
-block = "load"
-interval = 1
-format = "{1m}"
+idle_bg = "#B20000" 
 
 [[block]]
 block = "time"
 interval = 5
-format = "%a %d/%m %R"
+format = "%a %d.%m %R"
 [block.theme_overrides]
 idle_bg = "#4682B4"
 
 [[block]]
 block = "backlight"
+[block.theme_overrides]
+idle_bg = "#FFFF00"
+idle_fg = "#000000"
 
 [[block]]
 block = "battery"

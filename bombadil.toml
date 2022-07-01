@@ -1,0 +1,13 @@
+# {dotfiles}/bombadil.toml
+
+# Path to your dotfiles relative to your $HOME directory
+dotfiles_dir = "projects/dotfiles"
+
+[settings]
+
+[settings.dots]
+
+# You can have as many dot entry as you want, linking files or directories
+alacritty = { source = ".config/alacritty/alacritty.yml", target = ".config/alacritty/alacritty.yml" }
+
+liquidprompt = { source = ".config/liquidpromptrc", target = ".config/liquidpromptrc" }

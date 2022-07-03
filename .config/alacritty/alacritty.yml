@@ -58,4 +58,4 @@ colors:
     background: '0xb3d7ff'
   indexed_colors: []
 window:
-  opacity: 0.6
+  opacity: 0.85

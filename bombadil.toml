@@ -11,3 +11,5 @@ dotfiles_dir = "projects/dotfiles"
 alacritty = { source = ".config/alacritty/alacritty.yml", target = ".config/alacritty/alacritty.yml" }
 
 liquidprompt = { source = ".config/liquidpromptrc", target = ".config/liquidpromptrc" }
+
+nvim = { source = ".config/nvim/init.vim", target = ".config/nvim/init.vim" }

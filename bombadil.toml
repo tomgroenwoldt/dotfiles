@@ -19,3 +19,5 @@ i3 = { source = ".config/i3/config", target = ".config/i3/config" }
 i3status-rust = { source = ".config/i3status-rust/config.toml", target = ".config/i3status-rust/config.toml" }
  
 picom = { source = ".config/picom/picom.conf", target = ".config/picom/picom.conf" }
+
+X = { source = ".Xresources", target = ".Xresources" }

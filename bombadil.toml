@@ -21,3 +21,5 @@ i3status-rust = { source = ".config/i3status-rust/config.toml", target = ".confi
 picom = { source = ".config/picom/picom.conf", target = ".config/picom/picom.conf" }
 
 X = { source = ".Xresources", target = ".Xresources" }
+
+rofi = { source = ".config/rofi/config.rasi", target = ".config/rofi/config.rasi" }

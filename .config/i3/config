@@ -51,7 +51,7 @@ bindsym $mod+Return exec alacritty
 # kill focused window
 bindsym $mod+Shift+q kill
 
-bindsym $mod+d exec rofi -show run -config /home/tom/.config/rofi/config.rasi
+bindsym $mod+d exec rofi -show drun -config /home/tom/.config/rofi/config.rasi -monitor DP-2
 
 # change focus
 bindsym $mod+j focus left

@@ -14,11 +14,13 @@ unit = "GB"
 interval = 20
 warning = 20.0
 alert = 10.0
-format = "{icon} {used}/{total} ({available} free)"
+format = "{icon} {used} / {total} ({available} free)"
 
 [[block]]
 block = "memory"
 clickable = false
+format_mem = "{mem_used} /{mem_total}"
+display_type = "memory"
 
 [[block]]
 block = "cpu"

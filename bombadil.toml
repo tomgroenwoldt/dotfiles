@@ -1,0 +1,19 @@
+dotfiles_dir = ".dotfiles"
+
+[settings]
+posthooks = [ "i3 reload", "systemctl --user daemon-reload", "systemctl --user enable --now ssh-agent" ]
+
+vars = []
+
+[settings.dots]
+i3 = { source = "i3", target = ".config/i3" }
+i3status-rust = { source = "i3status-rust", target = ".config/i3status-rust" }
+rofi = { source = "rofi/power.sh", target = ".config/rofi/power.sh" }
+
+zsh = { source = "zsh/zshrc", target = ".zshrc" }
+alacritty = { source = "alacritty", target = ".config/alacritty" }
+
+git = { source = "git/.gitconfig", target = ".gitconfig" }
+helix = { source = "helix", target = ".config/helix" }
+
+ssh-agent-service = { source = "systemd-user/ssh-agent.service", target = ".config/systemd/user/ssh-agent.service" }

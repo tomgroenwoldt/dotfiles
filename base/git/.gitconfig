@@ -1,7 +1,7 @@
 [user]
     email = tom.groenwoldt@gmail.com
     name = Tom Groenwoldt
-    signingKey = 5697BAC9282C1FD4
+    signingKey = FA5A58F209561920
 [color]
     diff = auto
     status = auto

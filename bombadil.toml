@@ -28,6 +28,7 @@ xprofile = { source = "pc/xprofile", target = ".xprofile" }
 i3 = { source = "pc/i3", target = ".config/i3" }
 i3status-rust = { source = "pc/i3status-rust", target = ".config/i3status-rust" }
 X11 = { source = "pc/xinitrc", target = ".xinitrc" }
+gtk-3.0 = { source = "pc/gtk-3.0", target = ".config/gtk-3.0" }
 
 rofi = { source = "pc/rofi", target = ".config/rofi" }
 

@@ -1,4 +1,5 @@
 profile = "desktop"
 
+dual_monitors = "true"
 primary_display = "DP-3"
 secondary_display = "HDMI-1"

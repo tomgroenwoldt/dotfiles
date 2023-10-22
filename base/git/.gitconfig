@@ -1,7 +1,11 @@
 [user]
     email = tom.groenwoldt@gmail.com
     name = Tom Groenwoldt
+{% if profile == "desktop" %}
     signingKey = FA5A58F209561920
+{% elif profile == "laptop" %}
+    signingKey = AE4E88016D0D0AA1
+{% endif %}
 [color]
     diff = auto
     status = auto

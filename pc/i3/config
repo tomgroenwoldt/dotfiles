@@ -31,10 +31,19 @@ workspace $helix output primary
 workspace $ws4 output primary
 workspace $ws5 output primary
 workspace $ws6 output primary
-workspace $music output HDMI-1
-workspace $docs output HDMI-1
-workspace $communication output HDMI-1
-workspace $ws10 output HDMI-1
+
+{%- if dual_monitors == "true" %}
+workspace $music output {{secondary_display}}
+workspace $docs output {{secondary_display}}
+workspace $communication output {{secondary_display}}
+workspace $ws10 output {{secondary_display}}
+{% else %}
+workspace $music output primary
+workspace $docs output primary
+workspace $communication output primary
+workspace $ws10 output primary
+{% endif -%}
+
 
 # Bind programs to specific workspaces
 assign [class="Alacritty"] $terminals
@@ -51,16 +60,18 @@ exec --no-startup-id xrdb ~/.Xresources
 exec --no-startup-id dunst
 
 bar {
-    output DP-3
+    output {{primary_display}}
     tray_output primary
     font pango:Hack Nerd Font, FontAwesome 12
     position top
     status_command i3status-rs ~/.config/i3status-rust/config.toml
 }
 
+{%- if dual_monitors == "true" %}
 bar {
-    output HDMI-1
+    output {{secondary_display}}
     tray_output none
     font pango:Hack Nerd Font, FontAwesome 12
     position top
 }
+{% endif -%}

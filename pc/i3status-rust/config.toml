@@ -1,3 +1,9 @@
+{% if profile == "laptop" %}
+[[block]]
+block = "battery"
+format = " $icon $percentage "
+{% endif %}
+
 [[block]]
 block = "sound"
 [[block.click]]

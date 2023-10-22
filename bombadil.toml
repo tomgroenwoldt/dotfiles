@@ -30,3 +30,11 @@ i3status-rust = { source = "pc/i3status-rust", target = ".config/i3status-rust" 
 X11 = { source = "pc/xinitrc", target = ".xinitrc" }
 
 rofi = { source = "pc/rofi", target = ".config/rofi" }
+
+[profiles.laptop]
+extra_profiles = ["pc"]
+vars = ["vars/laptop.toml"]
+
+[profiles.desktop]
+extra_profiles = ["pc"]
+vars = ["vars/desktop.toml"]

@@ -1,1 +1,4 @@
 profile = "laptop"
+
+primary_display = "eDP"
+dual_monitors = "false"

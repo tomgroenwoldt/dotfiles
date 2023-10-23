@@ -7,6 +7,7 @@ vars = ["vars/vars.toml"]
 [settings.dots]
 zsh = { source = "base/zsh", target = ".config/zsh" }
 
+alacritty = { source = "base/alacritty", target = ".config/alacritty" }
 git = { source = "base/git/.gitconfig", target = ".gitconfig" }
 helix = { source = "base/helix", target = ".config/helix" }
 pacman = { source = "base/pacman", target = ".config/pacman" }

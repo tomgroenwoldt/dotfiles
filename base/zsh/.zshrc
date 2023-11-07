@@ -9,4 +9,4 @@ SAVEHIST=1000
 autoload -Uz compinit
 compinit
 
-source liquidprompt
+eval "$(starship init zsh)"

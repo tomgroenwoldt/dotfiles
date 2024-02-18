@@ -11,3 +11,6 @@ export PATH=~/.cache/cargo/bin:$PATH
 export CARGO_HOME=$XDG_CACHE_HOME/cargo
 
 export PATH=~/flutter/bin:$PATH
+
+export ROCM_PATH=/opt/rocm
+export HSA_OVERRIDE_GFX_VERSION=11.0.0

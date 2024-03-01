@@ -27,5 +27,9 @@ auto-format = true
 
 [[language]]
 name = "markdown"
-formatter = { command = "dprint", args = ["fmt", "--stdin", "md"]}
+formatter = { command = "dprint", args = ["fmt", "--stdin", "md"] }
+language-servers = ["mdpls"]
 auto-format = true
+
+[language-server]
+mdpls = { config = { markdown.preview.auto = true, markdown.preview.browser = "chromium" }, command = "mdpls" }

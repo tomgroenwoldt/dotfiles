@@ -5,39 +5,25 @@ vars = ["vars/vars.toml"]
 
 # Base
 [settings.dots]
-zsh = { source = "base/zsh", target = ".config/zsh" }
-starship = { source = "base/starship.toml", target = ".config/starship.toml" }
+zsh = { source = "base/zsh/zshrc", target = ".zshrc" }
 
-alacritty = { source = "base/alacritty", target = ".config/alacritty" }
-git = { source = "base/git/.gitconfig", target = ".gitconfig" }
+kitty = { source = "base/kitty", target = ".config/kitty" }
+git = { source = "base/gitconfig", target = ".gitconfig" }
 helix = { source = "base/helix", target = ".config/helix" }
-pacman = { source = "base/pacman", target = ".config/pacman" }
 
 # PC
-[profiles.pc]
-posthooks = [
-  "i3 restart",
-  "systemctl --user daemon-reload",
-  "systemctl --user enable --now ssh-agent",
-]
-
 [profiles.pc.dots]
-zshenv = { source = "pc/zshenv", target = ".zshenv" }
+gtk-3 = { source = "pc/gtk-3.0", target = ".config/gtk-3.0" }
+hypr = { source = "pc/hypr", target = ".config/hypr" }
+eww = { source = "pc/eww", target = ".config/eww" }
+aconfmgr = { source = "pc/aconfmgr", target = ".config/aconfmgr" }
 
-ssh-agent-service = { source = "pc/systemd-user/ssh-agent.service", target = ".config/systemd/user/ssh-agent.service" }
-xprofile = { source = "pc/xprofile", target = ".xprofile" }
-
-i3 = { source = "pc/i3", target = ".config/i3" }
-i3status-rust = { source = "pc/i3status-rust", target = ".config/i3status-rust" }
-X11 = { source = "pc/xinitrc", target = ".xinitrc" }
-gtk-3.0 = { source = "pc/gtk-3.0", target = ".config/gtk-3.0" }
-
-rofi = { source = "pc/rofi", target = ".config/rofi" }
-
+# Laptop
 [profiles.laptop]
 extra_profiles = ["pc"]
 vars = ["vars/laptop.toml"]
 
+# Desktop
 [profiles.desktop]
 extra_profiles = ["pc"]
 vars = ["vars/desktop.toml"]

@@ -1,4 +1,4 @@
-theme = "jellybeans"
+theme = "base16_transparent"
 
 [editor]
 true-color = true
@@ -10,9 +10,6 @@ cursorcolumn = true
 
 [editor.cursor-shape]
 insert = "bar"
-
-# [editor.soft-wrap]
-# enable = true
 
 [editor.statusline]
 right = ["version-control", "diagnostics", "selections", "position", "file-encoding"]

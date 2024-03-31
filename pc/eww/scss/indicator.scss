@@ -1,0 +1,13 @@
+@import "colors.scss";
+
+.indicator {
+	  border: 1px solid $border_col;
+    padding: 0 0.5rem;
+    background-color: $bg;
+   	box-shadow: 2px 2px 2px $shadow;
+}
+
+.indicator-icon {
+    padding: 0 0.5rem;
+		font-size: 1.2rem;
+}

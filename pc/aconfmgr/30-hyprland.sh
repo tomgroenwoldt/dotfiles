@@ -8,4 +8,5 @@ AddPackage qt6-wayland # Provides APIs for Wayland
 AddPackage sddm # QML based X11 and Wayland display manager
 AddPackage xdg-desktop-portal-hyprland # xdg-desktop-portal backend for hyprland
 
+AddPackage --foreign hyprland-workspaces # A multi-monitor aware Hyprland workspace widget for use with bars.
 AddPackage --foreign hyprpicker # A wlroots-compatible Wayland color picker that does not suck.

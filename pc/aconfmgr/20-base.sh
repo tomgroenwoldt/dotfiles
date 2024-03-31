@@ -12,6 +12,7 @@ AddPackage gtk-layer-shell # Library to create Wayland desktop components using 
 AddPackage htop # Interactive process viewer
 AddPackage iwd # Internet Wireless Daemon
 AddPackage jq # Command-line JSON processor
+AddPackage less # A terminal based program for viewing text files
 AddPackage libpulse # A featureful, general-purpose sound server (client library)
 AddPackage libva-mesa-driver # Open-source VA-API drivers
 AddPackage linux # The Linux kernel and modules

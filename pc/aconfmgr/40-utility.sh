@@ -1,6 +1,7 @@
 AddPackage acpi # Client for battery, power, and thermal readings
 AddPackage brightnessctl # Lightweight brightness control tool
 AddPackage btop # A monitor of system resources, bpytop ported to C++
+AddPackage discord # All-in-one voice and text chat for gamers
 AddPackage dolphin # KDE File Manager
 AddPackage dunst # Customizable and lightweight notification-daemon
 CopyFile /usr/bin/eww 755

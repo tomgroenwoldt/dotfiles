@@ -14,11 +14,7 @@
 (deflisten volume :initial "0"
 "scripts/volume.sh")
 
-(deflisten current_workspace :initial "1"
-"scripts/get_active_workspace.sh")
-
-(deflisten workspaces :initial "[]"
-"scripts/workspaces.sh")
+(deflisten workspaces "hyprland-workspaces _")
 
 (deflisten notifications :initial '{"count": 0, "notifications": [], "popups": []}'
 "scripts/notifications.sh current")

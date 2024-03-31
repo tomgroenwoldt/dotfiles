@@ -1,7 +1,15 @@
-(defwindow bar
+(defwindow bar0
     :monitor 0
     :windowtype "dock"
     :geometry (geometry :width "100%" :anchor "top center")
     :exclusive true
-    (bar)
+    (bar0)
+)
+
+(defwindow bar1
+    :monitor 1
+    :windowtype "dock"
+    :geometry (geometry :width "100%" :anchor "top center")
+    :exclusive true
+    (bar1)
 )

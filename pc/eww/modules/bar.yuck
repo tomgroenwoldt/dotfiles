@@ -1,7 +1,21 @@
-(defwidget bar []
+(defwidget bar0 []
     (box :class "bar-widget" :orientation "h" :space-evenly true
         (box :orientation "h" :space-evenly false :halign "start"
-            (workspaces)
+            (workspaceWidget :monitor 0)
+        )
+        (box :orientation "h" :space-evenly false :halign "center"
+            (clock)
+        )
+        (box :orientation "h" :space-evenly false :halign "end"
+            (indicator)
+        )
+    )
+)
+
+(defwidget bar1 []
+    (box :class "bar-widget" :orientation "h" :space-evenly true
+        (box :orientation "h" :space-evenly false :halign "start"
+            (workspaceWidget :monitor 1)
         )
         (box :orientation "h" :space-evenly false :halign "center"
             (clock)

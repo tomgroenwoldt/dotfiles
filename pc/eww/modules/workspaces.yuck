@@ -1,12 +1,20 @@
-(defwidget workspaces []
-    (eventbox :onscroll "scripts/change_active_workspace.sh {} ${current_workspace}"
-        (box :orientation "h" :space-evenly false :class "workspaces" :hexpand true
-            (for workspace in workspaces
-                (button 
-                    :class "workspace ${current_workspace == workspace.id ? "current" : ""}" 
-                    :onclick "hyprctl dispatch workspace ${workspace.id}" 
-                    ""
-                )
+(defwidget workspaceWidget [monitor]
+    (box :class "workspaces"
+        (for i in {workspaces[monitor].workspaces}
+            (label
+                :class "workspace"
+                :text {
+                    (i.id == 1 ? i.active ? "󰎤" : "󰎦"
+                    : i.id == 2 ? i.active ? "󰎧" : "󰎩"
+                    : i.id == 3 ? i.active ? "󰎪" : "󰎬"
+                    : i.id == 4 ? i.active ? "󰎭" : "󰎮"
+                    : i.id == 5 ? i.active ? "󰎱" : "󰎰"
+                    : i.id == 6 ? i.active ? "󰎳" : "󰎵"
+                    : i.id == 7 ? i.active ? "󰎶" : "󰎸"
+                    : i.id == 8 ? i.active ? "󰎹" : "󰎻"
+                    : i.id == 9 ? i.active ? "󰎼" : "󰎾"
+                    : i.active ? "󰽽": "󰽾")
+                }
             )
         )
     )

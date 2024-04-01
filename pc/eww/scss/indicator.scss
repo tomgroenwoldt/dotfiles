@@ -8,6 +8,16 @@
 
 .indicator-icon {
     margin: 0 0.25rem;
-    padding: 0 0.7rem;
+    padding: 0 0.7rem 0 0;
 		font-size: 1.5rem;
+}
+
+.battery-icon {
+    margin: 0 0.25rem;
+		font-size: 1.5rem;
+}
+
+.battery-percentage {
+		font-size: 1rem;
+    padding: 0 0 0 0.2rem;
 }

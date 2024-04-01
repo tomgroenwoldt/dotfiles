@@ -1,48 +1,54 @@
 (defwidget indicator []
-    (box :class "indicator" :orientation "h" :space-evenly false
+    (box :class "indicator" :space-evenly false
         (volume_icon)
         (network_icon)
         (battery_icon)
     )
 )
 
-(defwidget state_icon [condition text]
-    (label :class "indicator-icon" :visible {condition} :valign "center" :text {text})
-)
-
 (defwidget network_icon []
-    (state_icon :condition true
-                :text {network.essid == "Wired connection 1" ? "󰈀"
-                        : network.essid == "lo" ? "󰤭"
-                        : network.signal == "" ? "󰤩"
-                        : network.signal < 25 ? "󰤟"
-                        : network.signal < 50 ? "󰤢"
-                        : network.signal < 75 ? "󰤥"
-                        : "󰤨"}
+    (label
+        :class "indicator-icon" :valign "center"
+        :text {
+            (network.essid == "Wired connection 1" ? "󰈀"
+            : network.essid == "lo" ? "󰤭"
+            : network.signal == "" ? "󰤩"
+            : network.signal < 25 ? "󰤟"
+            : network.signal < 50 ? "󰤢"
+            : network.signal < 75 ? "󰤥"
+            : "󰤨")}
     )
 )
 
 (defwidget volume_icon []
-    (state_icon :condition true
-                :text {volume == "muted" || volume == 0  ? "󰖁" : volume < 33 ? "" : volume < 67 ? "󰖀" : ""}
+    (label
+        :class "indicator-icon" :valign "center"
+        :text {
+            (volume == "muted" || volume == 0  ? "󰖁"
+            : volume < 33 ? ""
+            : volume < 67 ? "󰖀"
+            : "")}
     )
 )
 
 (defwidget battery_icon []
-    (box :visible {EWW_BATTERY == "" ? false : true}
-        (state_icon :condition true
-                    :text {
-                        (EWW_BATTERY.BAT0.capacity > 90 ? "󰁹"
-                        : EWW_BATTERY.BAT0.capacity > 80 ? "󰂂"
-                        : EWW_BATTERY.BAT0.capacity > 70 ? "󰂁"
-                        : EWW_BATTERY.BAT0.capacity > 60 ? "󰂀"
-                        : EWW_BATTERY.BAT0.capacity > 50 ? "󰁿"
-                        : EWW_BATTERY.BAT0.capacity > 40 ? "󰁾"
-                        : EWW_BATTERY.BAT0.capacity > 30 ? "󰁽"
-                        : EWW_BATTERY.BAT0.capacity > 20 ? "󰁼"
-                        : EWW_BATTERY.BAT0.capacity > 10 ? "󰁻"
-                        : "󰁺")
-                        + ` ${EWW_BATTERY.BAT0.capacity}%`}
+    (box :class "battery-icon" :visible {EWW_BATTERY == "" ? false : true} :space-evenly false
+        (label
+            :text {
+                (EWW_BATTERY.BAT0.capacity > 90 ? "󰁹"
+                : EWW_BATTERY.BAT0.capacity > 80 ? "󰂂"
+                : EWW_BATTERY.BAT0.capacity > 70 ? "󰂁"
+                : EWW_BATTERY.BAT0.capacity > 60 ? "󰂀"
+                : EWW_BATTERY.BAT0.capacity > 50 ? "󰁿"
+                : EWW_BATTERY.BAT0.capacity > 40 ? "󰁾"
+                : EWW_BATTERY.BAT0.capacity > 30 ? "󰁽"
+                : EWW_BATTERY.BAT0.capacity > 20 ? "󰁼"
+                : EWW_BATTERY.BAT0.capacity > 10 ? "󰁻"
+                : "󰁺")}
+        )
+        (label
+            :class "battery-percentage"
+            :text {`${EWW_BATTERY.BAT0.capacity}%`}
         )
     )
 )

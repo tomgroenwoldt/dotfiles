@@ -12,6 +12,7 @@ AddPackage gtk-layer-shell # Library to create Wayland desktop components using 
 AddPackage htop # Interactive process viewer
 AddPackage iwd # Internet Wireless Daemon
 AddPackage jq # Command-line JSON processor
+AddPackage jre-openjdk-headless # OpenJDK Java 22 headless runtime environment
 AddPackage less # A terminal based program for viewing text files
 AddPackage libpulse # A featureful, general-purpose sound server (client library)
 AddPackage libva-mesa-driver # Open-source VA-API drivers
@@ -27,6 +28,8 @@ AddPackage pipewire # Low-latency audio/video router and processor
 AddPackage pipewire-alsa # Low-latency audio/video router and processor - ALSA configuration
 AddPackage pipewire-jack # Low-latency audio/video router and processor - JACK replacement
 AddPackage pipewire-pulse # Low-latency audio/video router and processor - PulseAudio replacement
+AddPackage podman # Tool and library for running OCI-based containers in pods
+AddPackage podman-docker # Emulate Docker CLI using podman
 AddPackage polkit-kde-agent # Daemon providing a polkit authentication UI for KDE
 AddPackage pulsemixer # CLI and curses mixer for pulseaudio
 AddPackage ripgrep # A search tool that combines the usability of ag with the raw speed of grep
@@ -51,3 +54,5 @@ AddPackage zsh # A very advanced and programmable command interpreter (shell) fo
 AddPackage --foreign oh-my-zsh-git # A community-driven framework for managing your zsh configuration. Includes 180+ optional plugins and over 120 themes to spice up your morning, and an auto-update tool so that makes it easy to keep up with the latest updates from the community
 AddPackage --foreign paru # Feature packed AUR helper
 AddPackage --foreign paru-debug # Detached debugging symbols for paru
+
+CopyFile /etc/containers/registries.conf

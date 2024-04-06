@@ -15,7 +15,7 @@ helix = { source = "base/helix", target = ".config/helix" }
 [profiles.pc.dots]
 gtk-3 = { source = "pc/gtk-3.0", target = ".config/gtk-3.0" }
 hypr = { source = "pc/hypr", target = ".config/hypr" }
-eww = { source = "pc/eww", target = ".config/eww" }
+waybar = { source = "pc/waybar", target = ".config/waybar" }
 aconfmgr = { source = "pc/aconfmgr", target = ".config/aconfmgr" }
 
 # Laptop

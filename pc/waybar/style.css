@@ -1,0 +1,42 @@
+* {
+    border-radius: 4px;
+}
+
+window#waybar {
+    background: unset;
+    font-family: RobotoMono Nerd Font;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/** Add transparent background to module groups. */
+.modules-left, .modules-right, .modules-center {
+    margin: 20px 20px 0 20px;
+  	border: 1px solid rgba(204, 204, 204, 0.18);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.modules-center {
+    font-size: 1rem;
+}
+
+#workspaces button {
+    margin: 0 0.25rem;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+#workspaces button.active {
+    color: rgba(255, 255, 255, 1);
+}
+
+/** Add some padding to all modules. */
+#pulseaudio, #battery, #network, #clock, #tray {
+    margin: 0 0.25rem;
+    padding: 0 0.7rem;
+}
+
+@keyframes blink {
+    to {
+        color: rgba(214, 45, 32, 0.3);
+    }
+}

@@ -10,6 +10,7 @@ AddPackage kitty # A modern, hackable, featureful, OpenGL-based terminal emulato
 AddPackage libnotify # Library for sending desktop notifications
 AddPackage mkcert # Simple tool for making locally-trusted development certificates
 AddPackage pgcli # A command line interface for PostgreSQL with auto-completion and syntax highlighting
+AddPackage prettier # An opinionated code formatter
 AddPackage pyright # Type checker for the Python language
 AddPackage python-lsp-black # python-lsp-server plugin that adds support to black autoformatter, forked from pyls-black
 AddPackage python-lsp-server # Fork of the python-language-server project, maintained by the Spyder IDE team and the community
@@ -18,6 +19,7 @@ AddPackage rustup # The Rust toolchain installer
 AddPackage sqlx-cli # Command-line utility for SQLx, the Rust SQL toolkit
 AddPackage teamspeak3 # TeamSpeak is software for quality voice communication via the Internet
 AddPackage toml-bombadil # Adotfile manager with templating
+AddPackage typescript-language-server # Language Server Protocol (LSP) implementation for TypeScript using tsserver
 AddPackage wofi # launcher for wlroots-based wayland compositors
 AddPackage yarn # Fast, reliable, and secure dependency management
 

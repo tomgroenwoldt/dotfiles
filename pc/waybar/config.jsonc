@@ -2,7 +2,7 @@
     "layer": "top",
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["clock"],
-    "modules-right": ["pulseaudio", "battery", "network", "tray"],
+    "modules-right": ["pulseaudio", "network", "battery", "tray"],
 
     "hyprland/workspaces": {
         "disable-click": true,
@@ -29,7 +29,7 @@
         "on-click": "pavucontrol"
     },
     "battery": {
-        "format": "{capacity}% {icon}",
+        "format": "{icon} <span size='small'>{capacity}%</span>",
         "format-icons": ["󰂃", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
         "states": {
             "warning": 20,

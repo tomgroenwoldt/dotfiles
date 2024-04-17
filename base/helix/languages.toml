@@ -42,3 +42,9 @@ args = ["--ignore", "E501"]
 [language.formatter]
 command = "black"
 args = ["--line-length", "80", "--quiet", "-"]
+
+[[language]]
+name = "rust"
+
+[language-server.rust-analyzer.config]
+cargo.features = "all"

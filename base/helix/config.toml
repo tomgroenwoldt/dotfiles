@@ -1,4 +1,4 @@
-theme = "base16_transparent"
+theme = "github_dark"
 
 [editor]
 true-color = true

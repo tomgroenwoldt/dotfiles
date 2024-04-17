@@ -56,3 +56,4 @@ AddPackage --foreign paru # Feature packed AUR helper
 AddPackage --foreign paru-debug # Detached debugging symbols for paru
 
 CopyFile /etc/containers/registries.conf
+CopyFile /etc/pacman.conf

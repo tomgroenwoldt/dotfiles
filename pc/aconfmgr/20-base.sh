@@ -50,6 +50,9 @@ AddPackage xorg-xinit # X.Org initialisation program
 AddPackage zoxide # A smarter cd command for your terminal
 AddPackage zram-generator # Systemd unit generator for zram devices
 AddPackage zsh # A very advanced and programmable command interpreter (shell) for UNIX
+AddPackage zsh-autosuggestions # Fish-like autosuggestions for zsh
+AddPackage zsh-completions # Additional completion definitions for Zsh
+AddPackage zsh-syntax-highlighting # Fish shell like syntax highlighting for Zsh
 
 AddPackage --foreign oh-my-zsh-git # A community-driven framework for managing your zsh configuration. Includes 180+ optional plugins and over 120 themes to spice up your morning, and an auto-update tool so that makes it easy to keep up with the latest updates from the community
 AddPackage --foreign paru # Feature packed AUR helper

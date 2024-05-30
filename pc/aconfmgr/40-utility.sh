@@ -25,5 +25,6 @@ AddPackage yarn # Fast, reliable, and secure dependency management
 
 AddPackage --foreign aconfmgr-git # A configuration manager for Arch Linux
 AddPackage --foreign anki # Helps you remember facts (like words/phrases in a foreign language) efficiently
+AddPackage --foreign qflipper # Desktop application for updating Flipper Zero firmware via PC
 AddPackage --foreign vesktop # Vesktop gives you the performance of web Discord and the comfort of Discord Desktop
 AddPackage --foreign woeusb # A Linux program to create Windows USB stick installer from a Windows DVD or an image

@@ -1,7 +1,6 @@
 AddPackage acpi # Client for battery, power, and thermal readings
 AddPackage brightnessctl # Lightweight brightness control tool
 AddPackage btop # A monitor of system resources, bpytop ported to C++
-AddPackage dolphin # KDE File Manager
 AddPackage dunst # Customizable and lightweight notification-daemon
 AddPackage firefox # Standalone web browser from mozilla.org
 AddPackage helix # A post-modern modal text editor
@@ -9,6 +8,8 @@ AddPackage just # A handy way to save and run project-specific commands
 AddPackage kitty # A modern, hackable, featureful, OpenGL-based terminal emulator
 AddPackage libnotify # Library for sending desktop notifications
 AddPackage mkcert # Simple tool for making locally-trusted development certificates
+AddPackage nautilus # Default file manager for GNOME
+AddPackage p7zip # Command-line file archiver with high compression ratio
 AddPackage pgcli # A command line interface for PostgreSQL with auto-completion and syntax highlighting
 AddPackage prettier # An opinionated code formatter
 AddPackage pyright # Type checker for the Python language
@@ -26,5 +27,6 @@ AddPackage yarn # Fast, reliable, and secure dependency management
 AddPackage --foreign aconfmgr-git # A configuration manager for Arch Linux
 AddPackage --foreign anki # Helps you remember facts (like words/phrases in a foreign language) efficiently
 AddPackage --foreign qflipper # Desktop application for updating Flipper Zero firmware via PC
+AddPackage --foreign rustdesk-bin # Yet another remote desktop software, written in Rust. Works out of the box, no configuration required. Great alternative to TeamViewer and AnyDesk!
 AddPackage --foreign vesktop # Vesktop gives you the performance of web Discord and the comfort of Discord Desktop
 AddPackage --foreign woeusb # A Linux program to create Windows USB stick installer from a Windows DVD or an image

@@ -29,6 +29,7 @@ AddPackage pipewire-alsa # Low-latency audio/video router and processor - ALSA c
 AddPackage pipewire-jack # Low-latency audio/video router and processor - JACK replacement
 AddPackage pipewire-pulse # Low-latency audio/video router and processor - PulseAudio replacement
 AddPackage podman # Tool and library for running OCI-based containers in pods
+AddPackage podman-compose # A script to run docker-compose.yml using podman
 AddPackage podman-docker # Emulate Docker CLI using podman
 AddPackage polkit-kde-agent # Daemon providing a polkit authentication UI for KDE
 AddPackage pulsemixer # CLI and curses mixer for pulseaudio

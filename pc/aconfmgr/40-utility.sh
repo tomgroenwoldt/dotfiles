@@ -9,6 +9,7 @@ AddPackage kitty # A modern, hackable, featureful, OpenGL-based terminal emulato
 AddPackage libnotify # Library for sending desktop notifications
 AddPackage mkcert # Simple tool for making locally-trusted development certificates
 AddPackage nautilus # Default file manager for GNOME
+AddPackage obs-studio # Free, open source software for live streaming and recording
 AddPackage p7zip # Command-line file archiver with high compression ratio
 AddPackage pgcli # A command line interface for PostgreSQL with auto-completion and syntax highlighting
 AddPackage prettier # An opinionated code formatter
@@ -30,3 +31,6 @@ AddPackage --foreign qflipper # Desktop application for updating Flipper Zero fi
 AddPackage --foreign rustdesk-bin # Yet another remote desktop software, written in Rust. Works out of the box, no configuration required. Great alternative to TeamViewer and AnyDesk!
 AddPackage --foreign vesktop # Vesktop gives you the performance of web Discord and the comfort of Discord Desktop
 AddPackage --foreign woeusb # A Linux program to create Windows USB stick installer from a Windows DVD or an image
+AddPackage --foreign zoom # Video Conferencing and Web Conferencing Service
+
+CreateDir /etc/containers/networks

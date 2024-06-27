@@ -13,11 +13,13 @@ AddPackage htop # Interactive process viewer
 AddPackage iwd # Internet Wireless Daemon
 AddPackage jq # Command-line JSON processor
 AddPackage jre-openjdk-headless # OpenJDK Java 22 headless runtime environment
+AddPackage ldns # Fast DNS library supporting recent RFCs
 AddPackage less # A terminal based program for viewing text files
 AddPackage libpulse # A featureful, general-purpose sound server (client library)
 AddPackage libva-mesa-driver # Open-source VA-API drivers
 AddPackage linux # The Linux kernel and modules
 AddPackage linux-firmware # Firmware files for Linux
+AddPackage linux-headers # Headers and scripts for building modules for the Linux kernel
 AddPackage meson # High productivity build system
 AddPackage nano # Pico editor clone with enhancements
 AddPackage network-manager-applet # Applet for managing network connections
@@ -39,6 +41,8 @@ AddPackage socat # Multipurpose relay
 AddPackage sof-firmware # Sound Open Firmware
 AddPackage vim # Vi Improved, a highly configurable, improved version of the vi text editor
 AddPackage unzip # For extracting and viewing files in .zip archives
+AddPackage v4l2loopback-dkms # v4l2-loopback device – module sources
+AddPackage v4l2loopback-utils # v4l2-loopback device – utilities only
 AddPackage vulkan-radeon # Open-source Vulkan driver for AMD GPUs
 AddPackage wget # Network utility to retrieve files from the Web
 AddPackage wireless_tools # Tools allowing to manipulate the Wireless Extensions

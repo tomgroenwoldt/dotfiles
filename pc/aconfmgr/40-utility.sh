@@ -4,6 +4,7 @@ AddPackage btop # A monitor of system resources, bpytop ported to C++
 AddPackage discord # All-in-one voice and text chat for gamers
 AddPackage dunst # Customizable and lightweight notification-daemon
 AddPackage firefox # Standalone web browser from mozilla.org
+AddPackage gimp # GNU Image Manipulation Program
 AddPackage helix # A post-modern modal text editor
 AddPackage just # A handy way to save and run project-specific commands
 AddPackage kitty # A modern, hackable, featureful, OpenGL-based terminal emulator
@@ -17,8 +18,8 @@ AddPackage prettier # An opinionated code formatter
 AddPackage pyright # Type checker for the Python language
 AddPackage python-lsp-black # python-lsp-server plugin that adds support to black autoformatter, forked from pyls-black
 AddPackage python-lsp-server # Fork of the python-language-server project, maintained by the Spyder IDE team and the community
-AddPackage ruff-lsp # Language Server Protocol implementation for Ruff
 AddPackage rustup # The Rust toolchain installer
+AddPackage spotify-launcher # Client for spotify's apt repository in Rust for Arch Linux
 AddPackage sqlx-cli # Command-line utility for SQLx, the Rust SQL toolkit
 AddPackage teamspeak3 # TeamSpeak is software for quality voice communication via the Internet
 AddPackage toml-bombadil # Adotfile manager with templating

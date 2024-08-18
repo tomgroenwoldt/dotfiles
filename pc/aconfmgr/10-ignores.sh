@@ -3,6 +3,7 @@ IgnorePath '/boot/*'
 IgnorePath '/etc/.pwd.lock'
 IgnorePath '/etc/.updated'
 IgnorePath '/etc/ca-certificates'
+IgnorePath '/etc/cni/net.d'
 IgnorePath '/etc/fonts'
 IgnorePath '/etc/fstab'
 IgnorePath '/etc/group*'
@@ -14,6 +15,7 @@ IgnorePath '/etc/locale*'
 IgnorePath '/etc/localtime'
 IgnorePath '/etc/machine-id'
 IgnorePath '/etc/mkinitcpio*'
+IgnorePath '/etc/NetworkManager'
 IgnorePath '/etc/os-release'
 IgnorePath '/etc/pacman.d/*'
 IgnorePath '/etc/passwd*'
@@ -26,6 +28,8 @@ IgnorePath '/etc/subuid*'
 IgnorePath '/etc/sudoers*'
 IgnorePath '/etc/systemd/*'
 IgnorePath '/etc/vconsole.conf'
+IgnorePath '/etc/X11'
+IgnorePath '/opt/containerd'
 IgnorePath '/usr/bin/groupmems'
 IgnorePath '/usr/lib/gconv'
 IgnorePath '/usr/lib/gdk-pixbuf*'
@@ -33,6 +37,7 @@ IgnorePath '/usr/lib/gio'
 IgnorePath '/usr/lib/ghc-9.2.8/*'
 IgnorePath '/usr/lib/gtk-4.0'
 IgnorePath '/usr/lib/gtk-3.0'
+IgnorePath '/usr/lib/gtk-2.0'
 IgnorePath '/usr/lib/jvm/default*'
 IgnorePath '/usr/lib/locale'
 IgnorePath '/usr/lib/modules'
@@ -48,9 +53,11 @@ IgnorePath '/usr/share/vim'
 IgnorePath '/var/.updated'
 IgnorePath '/var/db'
 IgnorePath '/var/lib/cni/networks'
+IgnorePath '/var/lib/containerd'
 IgnorePath '/var/lib/containers'
 IgnorePath '/var/lib/dbus'
 IgnorePath '/var/lib/dkms'
+IgnorePath '/var/lib/docker'
 IgnorePath '/var/lib/geoclue'
 IgnorePath '/var/lib/iwd'
 IgnorePath '/var/lib/lastlog'
@@ -69,5 +76,16 @@ IgnorePath '/var/lib/tpm2-tss'
 IgnorePath '/var/lib/upower'
 IgnorePath '/var/log/*'
 IgnorePath '/var/tmp'
-IgnorePath '/etc/NetworkManager'
-IgnorePath '/etc/X11'
+
+# AI Stuff
+IgnorePackage hipfft # rocFFT marshalling library.
+IgnorePackage libvirt # API for controlling virtualization engines (openvz,kvm,qemu,virtualbox,xen,etc)
+IgnorePackage mesa-utils # Essential Mesa utilities
+IgnorePackage mesa-vdpau # Open-source VDPAU drivers
+IgnorePackage miopen-hip # AMD's Machine Intelligence Library (HIP backend)
+IgnorePackage rocblas # Next generation BLAS implementation for ROCm platform
+IgnorePackage rocminfo # ROCm Application for Reporting System Info
+
+IgnorePackage --foreign python310 # Next generation of the python high-level scripting language, version 3.10
+IgnorePackage --foreign python36 # Major release 3.6 of the Python high-level programming language
+IgnorePackage --foreign ruff-lsp # Language Server Protocol implementation for Ruff

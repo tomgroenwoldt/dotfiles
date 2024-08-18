@@ -1,9 +1,11 @@
 AddPackage amd-ucode # Microcode update image for AMD CPUs
 AddPackage base # Minimal package set to define a basic Arch Linux installation
 AddPackage base-devel # Basic tools to build Arch Linux packages
+AddPackage bind # A complete, highly portable implementation of the DNS protocol
 AddPackage btrfs-progs # Btrfs filesystem utilities
 AddPackage cmake # A cross-platform open-source make system
 AddPackage cpio # A tool to copy files into or out of a cpio or tar archive
+AddPackage dpkg # The Debian Package Manager tools
 AddPackage efibootmgr # Linux user-space application to modify the EFI Boot Manager
 AddPackage fzf # Command-line fuzzy finder
 AddPackage git # the fast distributed version control system
@@ -21,9 +23,11 @@ AddPackage linux # The Linux kernel and modules
 AddPackage linux-firmware # Firmware files for Linux
 AddPackage linux-headers # Headers and scripts for building modules for the Linux kernel
 AddPackage meson # High productivity build system
+AddPackage mpv # a free, open source, and cross-platform media player
 AddPackage nano # Pico editor clone with enhancements
 AddPackage network-manager-applet # Applet for managing network connections
 AddPackage networkmanager # Network connection manager and user applications
+AddPackage nvtop # GPUs process monitoring for AMD, Intel and NVIDIA
 AddPackage pamixer # Pulseaudio command-line mixer like amixer
 AddPackage pavucontrol # PulseAudio Volume Control
 AddPackage pipewire # Low-latency audio/video router and processor

@@ -31,6 +31,7 @@ AddPackage --foreign aconfmgr-git # A configuration manager for Arch Linux
 AddPackage --foreign anki # Helps you remember facts (like words/phrases in a foreign language) efficiently
 AddPackage --foreign qflipper # Desktop application for updating Flipper Zero firmware via PC
 AddPackage --foreign rustdesk-bin # Yet another remote desktop software, written in Rust. Works out of the box, no configuration required. Great alternative to TeamViewer and AnyDesk!
+AddPackage --foreign vesktop # Vesktop gives you the performance of web Discord and the comfort of Discord Desktop
 AddPackage --foreign woeusb # A Linux program to create Windows USB stick installer from a Windows DVD or an image
 AddPackage --foreign zoom # Video Conferencing and Web Conferencing Service
 

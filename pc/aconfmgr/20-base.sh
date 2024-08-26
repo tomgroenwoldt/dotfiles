@@ -2,6 +2,8 @@ AddPackage amd-ucode # Microcode update image for AMD CPUs
 AddPackage base # Minimal package set to define a basic Arch Linux installation
 AddPackage base-devel # Basic tools to build Arch Linux packages
 AddPackage bind # A complete, highly portable implementation of the DNS protocol
+AddPackage bluez # Daemons for the bluetooth protocol stack
+AddPackage bluez-utils # Development and debugging utilities for the bluetooth protocol stack
 AddPackage btrfs-progs # Btrfs filesystem utilities
 AddPackage cmake # A cross-platform open-source make system
 AddPackage cpio # A tool to copy files into or out of a cpio or tar archive

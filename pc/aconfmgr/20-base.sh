@@ -14,6 +14,7 @@ AddPackage git # the fast distributed version control system
 AddPackage gst-plugin-pipewire # Multimedia graph framework - pipewire plugin
 AddPackage gtk-layer-shell # Library to create Wayland desktop components using the Layer Shell protocol
 AddPackage htop # Interactive process viewer
+AddPackage inotify-tools # inotify-tools is a C library and a set of command-line programs for Linux providing a simple interface to inotify.
 AddPackage iwd # Internet Wireless Daemon
 AddPackage jq # Command-line JSON processor
 AddPackage jre-openjdk-headless # OpenJDK Java 22 headless runtime environment
@@ -41,6 +42,7 @@ AddPackage podman-compose # A script to run docker-compose.yml using podman
 AddPackage podman-docker # Emulate Docker CLI using podman
 AddPackage polkit-kde-agent # Daemon providing a polkit authentication UI for KDE
 AddPackage pulsemixer # CLI and curses mixer for pulseaudio
+AddPackage python-gobject # Python bindings for GLib/GObject/GIO/GTK
 AddPackage ripgrep # A search tool that combines the usability of ag with the raw speed of grep
 AddPackage smartmontools # Control and monitor S.M.A.R.T. enabled ATA and SCSI Hard Drives
 AddPackage socat # Multipurpose relay

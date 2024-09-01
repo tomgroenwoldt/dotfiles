@@ -1,6 +1,7 @@
 {
   "spacing": 4,
   "modules-left": ["hyprland/workspaces", "hyprland/window"],
+  "modules-center": ["clock"],
   "modules-right": [
     "privacy",
     "custom/media",
@@ -10,7 +11,6 @@
     "temperature",
     "backlight",
     "battery",
-    "clock",
     "user"
   ],
   "hyprland/workspaces": {

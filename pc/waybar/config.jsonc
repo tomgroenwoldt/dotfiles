@@ -1,10 +1,9 @@
 {
   "spacing": 4,
   "modules-left": ["hyprland/workspaces", "hyprland/window"],
-  "modules-center": ["clock"],
+  "modules-center": ["clock", "custom/media"],
   "modules-right": [
     "privacy",
-    "custom/media",
     "idle_inhibitor",
     "pulseaudio",
     "network",

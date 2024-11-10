@@ -11,6 +11,7 @@ AddPackage dpkg # The Debian Package Manager tools
 AddPackage efibootmgr # Linux user-space application to modify the EFI Boot Manager
 AddPackage fzf # Command-line fuzzy finder
 AddPackage git # the fast distributed version control system
+AddPackage git-crypt # Transparent file encryption in Git
 AddPackage gst-plugin-pipewire # Multimedia graph framework - pipewire plugin
 AddPackage gtk-layer-shell # Library to create Wayland desktop components using the Layer Shell protocol
 AddPackage htop # Interactive process viewer
@@ -25,6 +26,8 @@ AddPackage libva-mesa-driver # Open-source VA-API drivers
 AddPackage linux # The Linux kernel and modules
 AddPackage linux-firmware # Firmware files for Linux
 AddPackage linux-headers # Headers and scripts for building modules for the Linux kernel
+AddPackage linux-lts # The LTS Linux kernel and modules
+AddPackage linux-lts-headers # Headers and scripts for building modules for the LTS Linux kernel
 AddPackage meson # High productivity build system
 AddPackage mpv # a free, open source, and cross-platform media player
 AddPackage nano # Pico editor clone with enhancements
@@ -41,6 +44,7 @@ AddPackage podman # Tool and library for running OCI-based containers in pods
 AddPackage podman-compose # A script to run docker-compose.yml using podman
 AddPackage podman-docker # Emulate Docker CLI using podman
 AddPackage polkit-kde-agent # Daemon providing a polkit authentication UI for KDE
+AddPackage pulseaudio-alsa # ALSA Configuration for PulseAudio
 AddPackage pulsemixer # CLI and curses mixer for pulseaudio
 AddPackage python-gobject # Python bindings for GLib/GObject/GIO/GTK
 AddPackage ripgrep # A search tool that combines the usability of ag with the raw speed of grep
@@ -51,7 +55,6 @@ AddPackage vim # Vi Improved, a highly configurable, improved version of the vi 
 AddPackage unzip # For extracting and viewing files in .zip archives
 AddPackage v4l2loopback-dkms # v4l2-loopback device – module sources
 AddPackage v4l2loopback-utils # v4l2-loopback device – utilities only
-AddPackage vulkan-radeon # Open-source Vulkan driver for AMD GPUs
 AddPackage wget # Network utility to retrieve files from the Web
 AddPackage wireless_tools # Tools allowing to manipulate the Wireless Extensions
 AddPackage wireplumber # Session / policy manager implementation for PipeWire
